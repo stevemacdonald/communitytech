@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Communitytech</title>
+    <title>Community Tech</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,6 +11,11 @@
   <body>
     <%= render 'layouts/navbar'%>
     <%= yield %>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><%= Time.now %></span>
+      </div>
+    </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
